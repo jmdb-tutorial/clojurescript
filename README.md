@@ -12,7 +12,6 @@ ALso this:
 
 https://github.com/magomimmo/modern-cljs/blob/master/doc/tutorial-01.md
 
-(require '[hello-world.core :as hello] :reload)
 
 
 # OM
@@ -23,9 +22,21 @@ Om is a clojurescript interface to react.js
 
 - Recording identity evidence on a loan application
 
+(enable-console-print!)
 
-(js/alert "I am an evil side-effect")
+(println "hello world from the repl!")
+
+(js/alert "Hello World!")
 
 (require '[clojure.browser.dom :as dom])
 
-(dom/append (dom/get-element "content") (dom/html->dom "<h1>ClojureScript is all up in your DOM.</h1>"))
+(dom/append (dom/get-element "content") (dom/html->dom "<h1>ClojureScript Rocks!</h1>"))
+
+
+(require '[hello-world.core :as hello] :reload)
+
+(hello/foo 3 4)
+
+;; Then can change the code and reload using
+
+(require '[hello-world.core :as hello] :reload)
