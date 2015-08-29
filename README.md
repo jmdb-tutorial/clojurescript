@@ -40,3 +40,7 @@ Om is a clojurescript interface to react.js
 ;; Then can change the code and reload using
 
 (require '[hello-world.core :as hello] :reload)
+
+## Figwheel
+
+https://github.com/bhauman/lein-figwheel/wiki/Quick-Start
