@@ -60,3 +60,7 @@ Add the facebook react dev tools:
 http://fb.me/react-devtools
 
 https://facebook.github.io/react/
+
+(in-ns 'hello-om.core)
+
+run lein figwheel to run the example and then hit localhost:3449
