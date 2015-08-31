@@ -49,7 +49,10 @@
       (om/set-state! owner :text ""))))
 
 (defn handle-change [e owner {:keys [text]}]
-      (om/set-state! owner :text (.. e -target -value)))
+  (let [value (.. e -target -value)]
+    (if-not (re-find #"[0-9]" value)
+      (om/set-state! owner :text value)
+      (om/set-state! owner :text text))))
 
 (defn contact-view [contact owner]
   (reify
