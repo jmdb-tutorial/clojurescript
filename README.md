@@ -53,3 +53,10 @@ https://github.com/clojure/clojurescript/wiki/The-REPL-and-Evaluation-Environmen
 
 https://github.com/bhauman/lein-figwheel/wiki/Quick-Start
 
+https://github.com/omcljs/om/wiki/Basic-Tutorial
+
+Add the facebook react dev tools:
+
+http://fb.me/react-devtools
+
+https://facebook.github.io/react/
