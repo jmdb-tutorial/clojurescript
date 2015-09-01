@@ -14,7 +14,8 @@
 
 (defonce app-state
   (atom
-   {:contacts
+   {:motd "Hello From Om"
+    :contacts
     [{:first "Ben" :last "Bitdiddle" :email "benb@mit.edu"}
      {:first "Alyssa" :middle-initial "P" :last "Hacker" :email "aphacker@mit.edu"}
      {:first "Eva" :middle "Lu" :last "Ator" :email "eval@mit.edu"}
@@ -94,6 +95,11 @@
 (om/root contacts-view app-state
   {:target (. js/document (getElementById "contacts"))})
 
+(om/root
+  (fn [data owner]
+    (om/component (dom/code nil (:motd data))))
+  app-state
+  {:target (. js/document (getElementById "motd"))})
 
 
 (defn on-js-reload []
