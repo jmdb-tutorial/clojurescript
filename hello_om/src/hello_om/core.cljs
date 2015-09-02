@@ -58,10 +58,10 @@
 (defn contact-view [contact owner]
   (reify
     om/IRenderState
-    (render-state [this {:keys [delete]}]
+    (render-state [this {:keys [delete]}]      
       (dom/li nil
         (dom/span nil (display-name contact))
-        (dom/button #js {:onClick (fn [e] (put! delete @contact))} "Delete")))))
+        (dom/button #js {:onClick (fn [e] (put! delete @contact) nil)} "Delete")))))
 
 ;; noticeconvert lazy seq to a vector
 (defn contacts-view [data owner]
