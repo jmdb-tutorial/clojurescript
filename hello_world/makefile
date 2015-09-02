@@ -8,3 +8,12 @@ autobuild:
 
 repl:
 	rlwrap java -cp cljs.jar:src clojure.main repl.clj
+
+release:
+	java -cp cljs.jar:src clojure.main release.clj
+
+clean:
+	rm -rf out
+
+browse:
+	open index.html	

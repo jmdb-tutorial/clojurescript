@@ -1,0 +1,13 @@
+# Hello world
+
+cd hello_world
+make clean
+ls
+
+# C-x-f build.clj
+# C-x-f src/hello_world/core.cljs
+
+make
+
+make browse
+
