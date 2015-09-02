@@ -21,6 +21,29 @@ tree
 open index.html
 
 # C-x-f out/main.js
+# C-x-f out/hello_world/core.js
+
+# Edit core.cljs
+
+#  Make a mistake + recompile
+(defn foo []
+     (throw "BANG!"))
+
+(foo)
+
+# See how the stack trace works
+
+# Fix the mistake and recompile
+
+(defn foo [a b]
+     (+ a b))
+
+(println "2 + 2 = "(+ 2 2))
+
+# Now try in the console
+
+hello_world.core.foo(3, 3);
+
 
 # Figwheel
 

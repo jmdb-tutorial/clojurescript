@@ -67,3 +67,12 @@ run lein figwheel to run the example and then hit localhost:3449
 
 
 https://facebook.github.io/react/
+# Where clojurescript support was added in chrome:
+https://code.google.com/p/chromium/issues/detail?id=312271
+
+
+Cursors in clojurescript:
+
+https://github.com/omcljs/om/wiki/Cursors#user-content-accessing-cursors
+
+Outside of the render phase, you cannot treat cursors as values. Instead, you need to deref it (@) and work with the value returned. Deref returns the actual value beneath the cursor: a map or a vector.
