@@ -1,13 +1,29 @@
+# Setup
+
+Open a browser and emacs side by side with empty browser window
+
 # Hello world
 
 cd hello_world
 make clean
-ls
+tree
 
-# C-x-f build.clj
 # C-x-f src/hello_world/core.cljs
+# C-x-f index.html
+# C-x-f build.clj
+
+"Hello world!" -> "Hello AOTB"
 
 make
 
-make browse
+tree
+
+open index.html
+
+# C-x-f out/main.js
+
+# Figwheel
+
+
+# OM
 
